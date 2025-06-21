@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4rem;
+  border-bottom: 5px dotted #18AD8F;
+  width: fit-content;
+}
+
+p,
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+header {
+  display: flex;
+  gap: 14em;
+  align-items: center;
+  padding: 2em;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav:nth-child(2) a {
+  color: #000000a7;
+}
+
+header nav:nth-child(2) {
+  display: flex;
+  gap: 4em;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  color: #fff;
+  padding: .6em 2em;
+  background-color: #18AD8F;
+  border-radius: 20px;
+  transition: background .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0c6c59;
+}
+
+.wrapper>img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 25%;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2em;
+}
+
+
+.home-content {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 3em;
+  min-height: 80dvh;
+}
+
+.home-content img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+
+.home-content h1 {
+  font-size: 5.5rem;
+  text-transform: capitalize;
+}
+
+.home-content p {
+  font-size: 2rem;
+  color: #000000a7;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about-content div {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #00000099;
+  width: 50%;
+  margin-bottom: 1.5em;
+}
+
+.about-content p {
+  margin-bottom: 2em;
+}
+
+.about-content img {
+  width: 40%;
+}
+
+
+h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #000000b1;
+  font-weight: 300;
+}
+
+.skill-content {
+  padding-block: 5em;
+  position: relative;
+}
+
+.skill-content div {
+  display: flex;
+  gap: 3em;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.skill-content img {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 34%;
+}
+
+.project-content {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.project-content>div {
+  flex: 1 1 300px;
+}
+
+.title {
+  font-size: 4rem;
+  margin-block: 1em;
+}
+
+.title+p {
+  font-size: 1.7rem;
+}
+
+footer {
+  background-color: #18AD8F;
+  text-align: center;
+  padding-block: 3em;
+}
+
+footer i {
+  background-color: #000;
+  color: #fff;
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: .2em;
+}
+
+
+/* mobile phone */
+
+@media only screen and (max-width:776px) {
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content div,
+  .about-content img {
+    width: 100%;
+  }
+
+  html {
+    font-size: 55%;
+  }
+
+  .skill-content img {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header nav:nth-child(2) a {
+    color: #000000a7;
+  }
+
+  header nav:nth-child(2) {
+    display: none;
+
+  }
+
+  header .logo {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .wrapper>img {
+    width: 40%;
+  }
+
+  .about-content p {
+    padding-top: 2em;
+  }
+
+  .home-content img {
+    width: 50%;
+  }
+
+
+}
+
+/* large desktop  */
+
+@media only screen and (min-width:1501px) {
+
+  html {
+    font-size: 90%;
+  }
+}
